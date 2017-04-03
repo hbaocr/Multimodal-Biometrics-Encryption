@@ -20,12 +20,7 @@
 % Note: This function is slow (1 - 2 mins to process a 256x256 image).  It uses
 % bilinear interpolation to estimate intensity values at ideal, real-valued pixel 
 % locations on each side of pixels to determine if they are local maxima.
-%
-% Peter Kovesi     pk@cs.uwa.edu.au
-% Department of Computer Science
-% The University of Western Australia
-%
-% December 1996
+
 
 function im = nonmaxsup(inimage, orient, radius)
 
