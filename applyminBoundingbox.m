@@ -1,3 +1,9 @@
+% Author : 
+% Piyush Badkul
+% piyushmact18@gmail.com
+% Computer Science and Engineering
+% Maulana Azad National Institute of Technology, Bhopal
+
 %function applyminBoundingbox(Arrayx, Arrayy,A) 
 x=imread('img1.jpg');
 
