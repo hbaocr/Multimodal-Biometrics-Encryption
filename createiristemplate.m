@@ -10,13 +10,7 @@
 % Output:
 %	template		    - the binary iris biometric template
 %	mask			    - the binary iris noise mask
-%
-% Author: 
-% Libor Masek
-% masekl01@csse.uwa.edu.au
-% School of Computer Science & Software Engineering
-% The University of Western Australia
-% November 2003
+ 
 
 function [template, mask,polar_array] = createiristemplate(eyeimage_filename)
 
@@ -53,7 +47,7 @@ eyeimage = imread(eyeimage_filename);
 %     % then perform automatic segmentation and
 %     % save the results to a file
 %     
-     [circleiris circlepupil imagewithnoise] = segmentiris(eyeimage);
+     [circleiris, circlepupil ,imagewithnoise] = segmentiris(eyeimage);
 %     save(savefile,'circleiris','circlepupil','imagewithnoise');
 %     
 % end
@@ -87,7 +81,7 @@ cd(w);
 
 % perform normalisation
 
-[polar_array noise_array] = normaliseiris(imagewithnoise, circleiris(2),...
+[polar_array, noise_array] = normaliseiris(imagewithnoise, circleiris(2),...
     circleiris(1), circleiris(3), circlepupil(2), circlepupil(1), circlepupil(3),eyeimage_filename, radial_res, angular_res);
 
 
@@ -99,4 +93,4 @@ cd(w);
 % cd(w);
 
 % perform feature encoding
-[template mask] = encode(polar_array, noise_array, nscales, minWaveLength, mult, sigmaOnf); 
+[template, mask] = encode(polar_array, noise_array, nscales, minWaveLength, mult, sigmaOnf); 
