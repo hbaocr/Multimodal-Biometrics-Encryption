@@ -10,13 +10,7 @@
 %
 % Output:
 %	lines   - parameters of the detected line in polar form
-%
-% Author: 
-% Libor Masek
-% masekl01@csse.uwa.edu.au
-% School of Computer Science & Software Engineering
-% The University of Western Australia
-% November 2003
+ 
 
 function lines = findline(image)
 
