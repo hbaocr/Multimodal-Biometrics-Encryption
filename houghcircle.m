@@ -1,4 +1,4 @@
-% houghcircle - takes an edge map image, and performs the Hough transform
+%   houghcircle - takes an edge map image, and performs the Hough transform
 % for finding circles in the image.
 %
 % Usage: 
