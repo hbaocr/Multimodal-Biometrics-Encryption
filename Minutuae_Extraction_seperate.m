@@ -10,10 +10,10 @@
 function [outImg1] = Minutuae_Extraction_seperate(fingerprint_image)
 %Read Input Image
  
-binary_image=imread(fingerprint_image);
+binary_image=im2bw(imread(fingerprint_image));
 
 %Small region is taken to show output clear
-%binary_image = binary_image(120:400,20:250);
+% binary_image = binary_image(10:200,20:240);
 %figure;imshow(binary_image);title('Input image');
 
 %Thinning
@@ -94,7 +94,7 @@ for i=1:len
     outImg2((bifurcation_x(i)+3),(bifurcation_y(i)-3):(bifurcation_y(i)+3))=1;
 end
 %figure;imshow(outImg);title('Minutiae');
- %figure;imshow(outImg1);title('Minutiae1');
+ % figure;imshow(outImg1);title('Minutiae1');
 %figure;imshow(outImg2);title('Minutiae2');
 %figure;imshow(bifurcation);title('bifurcation');
 %figure;imshow(ridge);title('ridge');

@@ -18,11 +18,11 @@
 % The University of Western Australia
 % November 2003
 
-function [template, mask] = createiristemplate(eyeimage_filename)
+function [template, mask,polar_array] = createiristemplate(eyeimage_filename)
 
 % path for writing diagnostic images
-global DIAGPATH
-DIAGPATH = 'diagnostics';
+%global DIAGPATH
+%DIAGPATH = 'diagnostics';
 
 %normalisation parameters
 radial_res = 20;
