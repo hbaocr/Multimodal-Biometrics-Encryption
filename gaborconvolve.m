@@ -14,14 +14,6 @@
 %
 % Output:
 %   E0              - a 1D cell array of complex valued comvolution results
-%
-% Author: 
-% Original 'gaborconvolve' by Peter Kovesi, 2001
-% Heavily modified by Libor Masek, 2003
-% masekl01@csse.uwa.edu.au
-% School of Computer Science & Software Engineering
-% The University of Western Australia
-% November 2003
 
 
 function [EO, filtersum] = gaborconvolve(im, nscale, minWaveLength, mult, ...
