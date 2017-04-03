@@ -19,12 +19,7 @@
 %   y		    - an array containing y coordinates of circle boundary
 %                 points
 %
-% Author: 
-% Libor Masek
-% masekl01@csse.uwa.edu.au
-% School of Computer Science & Software Engineering
-% The University of Western Australia
-% November 2003
+ 
 
 function [x,y] = circlecoords(c, r, imgsize,nsides)
 
