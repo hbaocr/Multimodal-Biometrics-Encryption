@@ -9,11 +9,6 @@
 %                     regions, values > 1 enhance contrast in dark
 %                     regions. 
 
-% Author: Peter Kovesi
-% Department of Computer Science & Software Engineering
-% The University of Western Australia
-% pk@cs.uwa.edu.au     www.cs.uwa.edu.au/~pk
-% July 2001
 
 function newim = adjgamma(im, g)
 
