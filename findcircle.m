@@ -25,13 +25,7 @@
 %	imagewithnoise	- original eye image, but with
 %			          location of noise marked with
 %			          NaN values
-%
-% Author: 
-% Libor Masek
-% masekl01@csse.uwa.edu.au
-% School of Computer Science & Software Engineering
-% The University of Western Australia
-% November 2003
+ 
 
 function [row, col, r] = findcircle(image,lradius,uradius,scaling, sigma, hithres, lowthres, vert, horz)
 
