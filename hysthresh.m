@@ -16,12 +16,7 @@
 % and with values above threshold T2 are also marked as edges. Eight
 % connectivity is used.
 %
-% It is assumed that the input image is non-negative
-%
-% Peter Kovesi          December 1996  - Original version
-%                       March    2001  - Speed improvements made (~4x)
-
-%
+% 
 % A stack (implemented as an array) is used to keep track of all the
 % indices of pixels that need to be checked.
 % Note: For speed the number of conditional tests have been minimised
