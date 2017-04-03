@@ -14,11 +14,6 @@
 %
 % Returns:   h - Updated accumulator array.
 
-% Peter Kovesi
-% Department of Computer Science & Software Engineering
-% The University of Western Australia
-% April 2002
-
 function h = addcircle(h, c, radius, weight)
 
     [hr, hc] = size(h);
