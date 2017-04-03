@@ -12,14 +12,7 @@
 % Output:
 %	x           - x coordinates
 %	y           - corresponding y coordinates
-%
-% Author: 
-% Libor Masek
-% masekl01@csse.uwa.edu.au
-% School of Computer Science & Software Engineering
-% The University of Western Australia
-% November 2003
-
+ 
 function [x,y] = linecoords(lines, imsize)
 
 xd = [1:imsize(2)];
