@@ -16,14 +16,7 @@
 % Output:
 % template          - the binary iris biometric template
 % mask              - the binary iris noise mask
-%
-% Author: 
-% Libor Masek
-% masekl01@csse.uwa.edu.au
-% School of Computer Science & Software Engineering
-% The University of Western Australia
-% November 2003
-
+ 
 function [template, mask] = encode(polar_array,noise_array, nscales, minWaveLength, mult, sigmaOnf)
 
 % convolve normalised region with Gabor filters
