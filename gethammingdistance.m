@@ -15,13 +15,8 @@
 %
 % Output:
 %   hd              - the Hamming distance as a ratio
-%
-% Author: 
-% Libor Masek
-% masekl01@csse.uwa.edu.au
-% School of Computer Science & Software Engineering
-% The University of Western Australia
-% November 2003
+
+
 
 
 function hd = gethammingdistance(template1, mask1, template2, mask2, scales)
