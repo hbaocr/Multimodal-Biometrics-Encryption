@@ -19,7 +19,7 @@
 function [EO, filtersum] = gaborconvolve(im, nscale, minWaveLength, mult, ...
     sigmaOnf)
 
-[rows cols] = size(im);		
+[rows ,cols] = size(im);		
 filtersum = zeros(1,size(im,2));
 
 EO = cell(1, nscale);          % Pre-allocate cell array
@@ -32,7 +32,7 @@ end
 logGabor  = zeros(1,ndata);
 result = zeros(rows,ndata);
 
-radius =  [0:fix(ndata/2)]/fix(ndata/2)/2;  % Frequency values 0 - 0.5
+radius =  0:fix(ndata/2)/fix(ndata/2)/2;  % Frequency values 0 - 0.5
 radius(1) = 1;
 
 wavelength = minWaveLength;        % Initialize filter wavelength.
