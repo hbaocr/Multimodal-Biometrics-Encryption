@@ -11,12 +11,8 @@
 % Output:
 %	h           - the Hough transform
 %
-% Author: 
-% Libor Masek
-% masekl01@csse.uwa.edu.au
-% School of Computer Science & Software Engineering
-% The University of Western Australia
-% November 2003
+
+
 
 function h = houghcircle(edgeim, rmin, rmax)
 
